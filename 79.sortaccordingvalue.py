@@ -7,12 +7,13 @@ for x in d.values():
     l.append(x)
 l.sort()
 i=0
-while r!=len(d):
+while i!=n:
  for x in d.keys():
-    if d[x]==l[i] and d[x] not in d1:
+    if d[x]==l[i]:
         d1.update({x:l[i]})
-        r+=1
         i+=1
+        if i==n:
+            break
     
-print("sorted dict according values is :::",d1)   
+print("sorted dict according values is :::\n",d1)   
 input()
