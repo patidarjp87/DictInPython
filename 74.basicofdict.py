@@ -8,7 +8,5 @@ for x in range(1,n+1):
 for x in l:
     print("Enter value for key ",x,end=' ')
     d[x]=eval(input())
-
-print(l)
 print(d)
 input()
